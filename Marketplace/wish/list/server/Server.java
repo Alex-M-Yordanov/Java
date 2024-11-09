@@ -56,7 +56,7 @@ public class Server {
     private Timer shutdownTimer = new Timer(true);
 
     // The maximum idle time (in milliseconds) before the server shuts down.
-    private static final int SHUTDOWN_DELAY_MS = 10000;
+    private static final int SHUTDOWN_DELAY_MS = 20000;
 
     /**
      * Constructs a new {@link Server} instance.
