@@ -8,6 +8,7 @@
 * [Folder Structure](#folder-structure)
 * [Usage](#usage)
 * [Testing](#testing)
+* [Code Quality](#code-quality)
 
 
 
@@ -76,3 +77,9 @@ marketplace/
 
 ### Testing
 &nbsp;&nbsp;&nbsp;&nbsp;Unit tests for the project can be found in the test/ folder. In this project, the business logic (everything apart from the client and server) has been thoroughly tested with 100% code coverage. The tests for the business logic validate the correctness and reliability of key components, such as command handling, storage management, and other core functionalities. These tests ensure that the core operations of the system are functioning as expected. Unfortunately, the client and server components currently have limited test coverage.
+
+### Code quality
+&nbsp;&nbsp;&nbsp;&nbsp;This project uses Checkstyle to maintain consistent code style across the codebase.
+* The Checkstyle configuration file (checkstyle.xml) is located in the config/ directory.
+* You can use Checkstyle with your IDE (e.g., IntelliJ IDEA, Eclipse) or integrate it into your build process (e.g., with Maven or Gradle) to ensure that your code adheres to the required style.
+
