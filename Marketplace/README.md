@@ -5,7 +5,7 @@ A simple marketplace application with client-server architecture. The project al
 * [Project Overview](#project-overview)
 * [Features](#features)
 * [Technologies Used](#technologies-used)
-* Folder Structure
+* [Folder Structure](#folder-structure)
 * [Usage](#usage)
 * [Testing](#testing)
 
@@ -17,17 +17,36 @@ This project implements a client-server application where the client communicate
 The core functionality includes adding, removing, and listing items, or executing any other server-side functionality that can be implemented based on commands.
 
 ### Features
-Client-server architecture with socket communication
-Command-based interactions (e.g., add, remove, list)
-Server processes client commands and sends back responses
-Graceful error handling and disconnection management
-Unit tests for client and server functionality
+* Client-server architecture with socket communication
+* Command-based interactions (e.g., add, remove, list)
+* Server processes client commands and sends back responses
+* Graceful error handling and disconnection management
+* Unit tests for client and server functionality
 
 ### Technologies Used
-Java - Programming language used for both the client and server
-JUnit - Testing framework for unit tests
-Mockito - Mocking framework for testing server-client interactions
-SocketChannel - Java NIO for client-server communication
+* Java 
+* JUnit5 - Testing framework for unit tests
+* Mockito - Mocking framework for testing server-client interactions
+* SocketChannel - Java NIO for client-server communication
+
+### Folder Structure
+Here is the structure of the project:
+
+```plaintext
+marketplace/
+│
+├── wish-list/
+│   ├── storage/      # Contains storage management classes
+│   ├── client/       # Contains client-side logic for connecting to the server
+│   ├── server/       # Contains server-side logic for managing connections
+│   └── command/      # Contains classes for handling commands
+│
+└── tests/
+    ├── clienttests/  # Contains tests for the client-side logic
+    ├── servertests/  # Contains tests for the server-side logic
+    ├── commandtests/ # Contains tests for command-related logic
+    └── storagetests/ # Contains tests for storage-related functionality
+'''
 
 ### Usage
 Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
