@@ -65,12 +65,12 @@ marketplace/
 1. **Start the Server:** Run the Server class to start listening for client connections.
 2. **Start the Client:** Run the Client class. The client will connect to the server and await commands.
 3. **Send Commands:** You can enter commands such as:
-    - buy-item <user> <item_id>: Buys the item with id <item_id> and marks it as sold.
-    - bid-item <user> <item_id> <price>: Creates a bid for item with id <item_id> for <price> dollars.
-    - view-bids <item_id>: Lists all the bids for the item with id <item_id>.
-    - remove-item <user> <item_id>: Removes item with id <item_id>.
-    - list-item <user> <item_name> <price>: Adds a new item to the storage. 
-    - list-items: Lists all items.
+    - _buy-item <user> <item_id>_: Buys the item with id <item_id> and marks it as sold.
+    - _bid-item <user> <item_id>_ <price>: Creates a bid for item with id <item_id> for <price> dollars.
+    - _view-bids <item_id>_: Lists all the bids for the item with id <item_id>.
+    - _remove-item <user> <item_id>_: Removes item with id <item_id>.
+    - _list-item <user> <item_name> <price>_: Adds a new item to the storage. 
+    - _list-items_: Lists all items.
 4. **Exit the Client:** Type "exit" to terminate the client.
 5. **Exit the Server:** The server automatically shuts down after 20 seconds if no clients are connected.
 
