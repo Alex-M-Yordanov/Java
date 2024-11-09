@@ -1,5 +1,5 @@
 # Marketplace
-   A simple marketplace application with client-server architecture. The project allows users to interact with a server through socket communication, where the client can send commands and receive responses.
+<p style="text-indent: 2em;">A simple marketplace application with client-server architecture. The project allows users to interact with a server through socket communication, where the client can send commands and receive responses.</p>p
 
 ### Table of Contents
 * [Project Overview](#project-overview)
