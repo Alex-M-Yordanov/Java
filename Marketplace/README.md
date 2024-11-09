@@ -12,9 +12,9 @@
 
 
 ### Project Overview
-> This project implements a client-server application where the client communicates with the server to send commands and receive responses. The communication is handled via Java sockets. The server processes commands and returns appropriate results to the client.
+&nbsp;&nbsp;&nbsp;&nbsp;This project implements a client-server application where the client communicates with the server to send commands and receive responses. The communication is handled via Java sockets. The server processes commands and returns appropriate results to the client.
 
-    The core functionality includes adding, removing, and listing items, or executing any other server-side functionality that can be implemented based on commands.
+&nbsp;&nbsp;&nbsp;&nbsp;The core functionality includes adding, removing, and listing items, or executing any other server-side functionality that can be implemented based on commands.
 
 ### Features
 * Client-server architecture with socket communication
@@ -30,7 +30,7 @@
 * SocketChannel - Java NIO for client-server communication
 
 ### Folder Structure
-   Here is the structure of the project:
+&nbsp;&nbsp;&nbsp;&nbsp;Here is the structure of the project:
 
 ```plaintext
 marketplace/
@@ -60,7 +60,7 @@ marketplace/
 
   
 ### Usage
-   Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
+&nbsp;&nbsp;&nbsp;&nbsp;Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
 
 1. Start the Server: Run the Server class to start listening for client connections.
 2. Start the Client: Run the Client class. The client will connect to the server and await commands.
@@ -75,4 +75,4 @@ marketplace/
 5. Exit the Server: The server automatically shuts down after 20 seconds if no clients are connected.
 
 ### Testing
-   Unit tests for the project can be found in the test/ folder. In this project, the business logic (everything apart from the client and server) has been thoroughly tested with 100% code coverage. The tests for the business logic validate the correctness and reliability of key components, such as command handling, storage management, and other core functionalities. These tests ensure that the core operations of the system are functioning as expected. Unfortunately, the client and server components currently have limited test coverage.
+&nbsp;&nbsp;&nbsp;&nbsp;Unit tests for the project can be found in the test/ folder. In this project, the business logic (everything apart from the client and server) has been thoroughly tested with 100% code coverage. The tests for the business logic validate the correctness and reliability of key components, such as command handling, storage management, and other core functionalities. These tests ensure that the core operations of the system are functioning as expected. Unfortunately, the client and server components currently have limited test coverage.
