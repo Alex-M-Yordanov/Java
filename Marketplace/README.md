@@ -62,17 +62,17 @@ marketplace/
 ### Usage
 &nbsp;&nbsp;&nbsp;&nbsp;Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
 
-1. Start the Server: Run the Server class to start listening for client connections.
-2. Start the Client: Run the Client class. The client will connect to the server and await commands.
-3. Send Commands: You can enter commands such as:
+1. **Start the Server:** Run the Server class to start listening for client connections.
+2. **Start the Client:** Run the Client class. The client will connect to the server and await commands.
+3. **Send Commands:** You can enter commands such as:
     - buy-item <user> <item_id>: Buys the item with id <item_id> and marks it as sold.
     - bid-item <user> <item_id> <price>: Creates a bid for item with id <item_id> for <price> dollars.
     - view-bids <item_id>: Lists all the bids for the item with id <item_id>.
     - remove-item <user> <item_id>: Removes item with id <item_id>.
     - list-item <user> <item_name> <price>: Adds a new item to the storage. 
     - list-items: Lists all items.
-4. Exit the Client: Type "exit" to terminate the client.
-5. Exit the Server: The server automatically shuts down after 20 seconds if no clients are connected.
+4. **Exit the Client:** Type "exit" to terminate the client.
+5. **Exit the Server:** The server automatically shuts down after 20 seconds if no clients are connected.
 
 ### Testing
 &nbsp;&nbsp;&nbsp;&nbsp;Unit tests for the project can be found in the test/ folder. In this project, the business logic (everything apart from the client and server) has been thoroughly tested with 100% code coverage. The tests for the business logic validate the correctness and reliability of key components, such as command handling, storage management, and other core functionalities. These tests ensure that the core operations of the system are functioning as expected. Unfortunately, the client and server components currently have limited test coverage.
