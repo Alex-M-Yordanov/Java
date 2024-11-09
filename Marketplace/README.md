@@ -66,7 +66,7 @@ marketplace/
 2. **Start the Client:** Run the Client class. The client will connect to the server and await commands.
 3. **Send Commands:** You can enter commands such as:
     - _buy-item <user> <item_id>_: Buys the item with id <item_id> and marks it as sold.
-    - _bid-item <user> <item_id>_ <price>: Creates a bid for item with id <item_id> for <price> dollars.
+    - _bid-item <user> <item_id> <price>_: Creates a bid for item with id <item_id> for <price> dollars.
     - _view-bids <item_id>_: Lists all the bids for the item with id <item_id>.
     - _remove-item <user> <item_id>_: Removes item with id <item_id>.
     - _list-item <user> <item_name> <price>_: Adds a new item to the storage. 
