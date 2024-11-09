@@ -24,10 +24,10 @@
 * Unit tests for client and server functionality
 
 ### Technologies Used
-* Java 
-* JUnit5 - Testing framework for unit tests
-* Mockito - Mocking framework for testing server-client interactions
-* SocketChannel - Java NIO for client-server communication
+* **Java** 
+* **JUnit5** - Testing framework for unit tests
+* **Mockito** - Mocking framework for testing server-client interactions
+* **Java NIO** - Non-Blocking I/O for client-server communication
 
 ### Folder Structure
 &nbsp;&nbsp;&nbsp;&nbsp;Here is the structure of the project:
