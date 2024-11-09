@@ -49,23 +49,30 @@ marketplace/
 │           ├── CommandCreator.java
 │           ├── CommandExecutor.java
 │
-└── tests/
+└── test/
     ├── ServerTest.java
     ├── CommandCreatorTest.java
     ├── CommandExecutorTest.java
     └── InMemoryStorageTest.java
 ```
+- wish/list contains all the core functionality of the project, split into subfolders based on roles (storage, client, server, command).
+- test/ contains all the tests related to the different components.
 
+- 
 ### Usage
 Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
 
-Start the Server: Run the Server class to start listening for client connections.
-Start the Client: Run the Client class. The client will connect to the server and await commands.
-Send Commands: You can enter commands such as:
-add <item_name>: Adds an item.
-remove <item_name>: Removes an item.
-list: Lists all items.
-Exit the Client: Type exit to terminate the client.
+1. Start the Server: Run the Server class to start listening for client connections.
+2. Start the Client: Run the Client class. The client will connect to the server and await commands.
+3. Send Commands: You can enter commands such as:
+    - buy-item <user> <item_id>: Buys the item with id <item_id> and marks it as sold.
+    - bid-item <user> <item_id> <price>: Creates a bid for item with id <item_id> for <price> dollars.
+    - view-bids <item_id>: Lists all the bids for the item with id <item_id>.
+    - remove-item <user> <item_id>: Removes item with id <item_id>.
+    - list-item <user> <item_name> <price>: Adds a new item to the storage. 
+    - list-items: Lists all items.
+4. Exit the Client: Type "exit" to terminate the client.
+5. Exit the Server: The server automatically shuts down after 20 seconds if no clients are connected.
 
 ### Testing
 Unit tests for the project can be found in the tests/ folder. The tests verify the functionality of both the client and server, ensuring commands are processed correctly and responses are sent and received.
