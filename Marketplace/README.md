@@ -1,5 +1,5 @@
 # Marketplace
-A simple marketplace application with client-server architecture. The project allows users to interact with a server through socket communication, where the client can send commands and receive responses.
+    A simple marketplace application with client-server architecture. The project allows users to interact with a server through socket communication, where the client can send commands and receive responses.
 
 ### Table of Contents
 * [Project Overview](#project-overview)
@@ -12,9 +12,9 @@ A simple marketplace application with client-server architecture. The project al
 
 
 ### Project Overview
-This project implements a client-server application where the client communicates with the server to send commands and receive responses. The communication is handled via Java sockets. The server processes commands and returns appropriate results to the client.
+    This project implements a client-server application where the client communicates with the server to send commands and receive responses. The communication is handled via Java sockets. The server processes commands and returns appropriate results to the client.
 
-The core functionality includes adding, removing, and listing items, or executing any other server-side functionality that can be implemented based on commands.
+    The core functionality includes adding, removing, and listing items, or executing any other server-side functionality that can be implemented based on commands.
 
 ### Features
 * Client-server architecture with socket communication
@@ -58,9 +58,9 @@ marketplace/
 - wish/list contains all the core functionality of the project, split into subfolders based on roles (storage, client, server, command).
 - test/ contains all the tests related to the different components.
 
-- 
+  
 ### Usage
-Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
+    Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
 
 1. Start the Server: Run the Server class to start listening for client connections.
 2. Start the Client: Run the Client class. The client will connect to the server and await commands.
@@ -75,4 +75,4 @@ Once the application is set up, you can interact with it through the command-lin
 5. Exit the Server: The server automatically shuts down after 20 seconds if no clients are connected.
 
 ### Testing
-Unit tests for the project can be found in the tests/ folder. The tests verify the functionality of both the client and server, ensuring commands are processed correctly and responses are sent and received.
+    Unit tests for the project can be found in the test/ folder. In this project, the business logic (everything apart from the client and server) has been thoroughly tested with 100% code coverage. The tests for the business logic validate the correctness and reliability of key components, such as command handling, storage management, and other core functionalities. These tests ensure that the core operations of the system are functioning as expected. Unfortunately, the client and server components currently have limited test coverage.
