@@ -46,7 +46,7 @@ marketplace/
     ├── servertests/  # Contains tests for the server-side logic
     ├── commandtests/ # Contains tests for command-related logic
     └── storagetests/ # Contains tests for storage-related functionality
-```plaintext
+```
 
 ### Usage
 Once the application is set up, you can interact with it through the command-line client. Here's a simple interaction:
