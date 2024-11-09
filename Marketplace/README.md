@@ -35,17 +35,25 @@ Here is the structure of the project:
 ```plaintext
 marketplace/
 │
-├── wish-list/
-│   ├── storage/      # Contains storage management classes
-│   ├── client/       # Contains client-side logic for connecting to the server
-│   ├── server/       # Contains server-side logic for managing connections
-│   └── command/      # Contains classes for handling commands
+├── wish/
+│   ├── list/
+│       ├── storage/
+│           ├── Storage.java
+│           ├── InMemotyStorage.java
+│       ├── client/
+│           ├── Client.java
+│       ├── server/
+│           ├── Server.java
+│       └── command/
+│           ├── Command.java
+│           ├── CommandCreator.java
+│           ├── CommandExecutor.java
 │
 └── tests/
-    ├── clienttests/  # Contains tests for the client-side logic
-    ├── servertests/  # Contains tests for the server-side logic
-    ├── commandtests/ # Contains tests for command-related logic
-    └── storagetests/ # Contains tests for storage-related functionality
+    ├── ServerTest.java
+    ├── CommandCreatorTest.java
+    ├── CommandExecutorTest.java
+    └── InMemoryStorageTest.java
 ```
 
 ### Usage
