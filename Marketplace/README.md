@@ -35,26 +35,26 @@
 
 ```plaintext
 marketplace/
-│
-├── wish/
-│   ├── list/
-│       ├── storage/
-│           ├── Storage.java
-│           ├── InMemotyStorage.java
-│       ├── client/
-│           ├── Client.java
-│       ├── server/
-│           ├── Server.java
-│       └── command/
-│           ├── Command.java
-│           ├── CommandCreator.java
-│           ├── CommandExecutor.java
-│
-└── test/
-    ├── ServerTest.java
-    ├── CommandCreatorTest.java
-    ├── CommandExecutorTest.java
-    └── InMemoryStorageTest.java
+        │
+        ├── wish/
+        │   ├── list/
+        │       ├── storage/
+        │           ├── Storage.java
+        │           ├── InMemotyStorage.java
+        │       ├── client/
+        │           ├── Client.java
+        │       ├── server/
+        │           ├── Server.java
+        │       └── command/
+        │           ├── Command.java
+        │           ├── CommandCreator.java
+        │           ├── CommandExecutor.java
+        │
+        └── test/
+            ├── ServerTest.java
+            ├── CommandCreatorTest.java
+            ├── CommandExecutorTest.java
+            └── InMemoryStorageTest.java
 ```
 - wish/list contains all the core functionality of the project, split into subfolders based on roles (storage, client, server, command).
 - test/ contains all the tests related to the different components.
